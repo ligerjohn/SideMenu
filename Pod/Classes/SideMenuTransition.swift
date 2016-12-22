@@ -487,7 +487,7 @@ extension SideMenuTransition: UIViewControllerAnimatedTransitioning {
                     container.insertSubview(topView, at: 0)
                 }
                 if !SideMenuManager.menuPresentingViewControllerUserInteractionEnabled {
-                    let tapView = UIView()
+                    let tapView = SideMenuManager.menuTapView ?? UIView()
                     container.insertSubview(tapView, aboveSubview: topView)
                     tapView.bounds = container.bounds
                     tapView.center = topView.center

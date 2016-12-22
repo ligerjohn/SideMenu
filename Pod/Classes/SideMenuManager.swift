@@ -140,7 +140,9 @@ open class SideMenuManager : NSObject {
             }
         }
     }
-    
+
+	open static var menuTapView: UIView?
+
     /// -Warning: Deprecated. Use `menuPushStyle = .replace` instead.
     @available(*, deprecated, renamed: "menuPushStyle", message: "Use `menuPushStyle = .replace` instead.")
     open static var menuReplaceOnPush: Bool {
